@@ -1,0 +1,16 @@
+{
+  "name": "@pipeworx/mcp-books",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "pipeworx",
+    "books"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
