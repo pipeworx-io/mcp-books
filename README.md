@@ -1,14 +1,14 @@
-# @pipeworx/mcp-books
+# mcp-books
 
-MCP server for book data -- search and browse via [Open Library](https://openlibrary.org/) (free, no auth required).
+Books MCP — wraps Open Library API (free, no auth)
+
+Part of the [Pipeworx](https://pipeworx.io) open MCP gateway.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `search_books` | Search books by title, author, or keyword |
-| `get_book` | Get full details for a book by ISBN |
-| `get_author` | Get biography and info for an author by Open Library key |
+| `get_book` | Get full details for a book by ISBN. |
 
 ## Quick Start
 
@@ -24,7 +24,7 @@ Add to your MCP client config:
 }
 ```
 
-Or run via CLI:
+Or use the CLI:
 
 ```bash
 npx pipeworx use books

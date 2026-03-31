@@ -1,12 +1,3 @@
-/**
- * Books MCP — wraps Open Library API (free, no auth)
- *
- * Tools:
- * - search_books: search by title, author, or keyword
- * - get_book: full details for a book by ISBN
- * - get_author: author biography and key info
- */
-
 interface McpToolDefinition {
   name: string;
   description: string;
@@ -21,6 +12,16 @@ interface McpToolExport {
   tools: McpToolDefinition[];
   callTool: (name: string, args: Record<string, unknown>) => Promise<unknown>;
 }
+
+/**
+ * Books MCP — wraps Open Library API (free, no auth)
+ *
+ * Tools:
+ * - search_books: search by title, author, or keyword
+ * - get_book: full details for a book by ISBN
+ * - get_author: author biography and key info
+ */
+
 
 const BASE_URL = 'https://openlibrary.org';
 
