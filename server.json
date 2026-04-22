@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/books",
-  "title": "uooks",
-  "description": "Books MCP — wraps Open Library API (free, no auth)",
+  "title": "Books",
+  "description": "Books MCP \u2014 wraps Open Library API (free, no auth)",
   "version": "0.1.0",
   "websiteUrl": "https://pipeworx.io/packs/books",
   "repository": {
