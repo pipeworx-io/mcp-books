@@ -1,0 +1,70 @@
+[
+  {
+    "name": "search_books",
+    "description": "Search for books by title, author, or keyword. Returns title, author, year, ISBN, and cover image URL. Use this to discover books before fetching full details.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query (title, author, or keywords)"
+        },
+        "limit": {
+          "type": "number",
+          "description": "Number of results to return (1-20, default 5)"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_book",
+    "description": "Fetch Open Library edition details for a book by ISBN-10 or ISBN-13. Returns title, publish_date, number_of_pages, subjects (up to 10), description, cover_url, and author_keys for follow-up get_author calls.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "isbn": {
+          "type": "string",
+          "description": "ISBN-10 or ISBN-13"
+        }
+      },
+      "required": [
+        "isbn"
+      ]
+    }
+  },
+  {
+    "name": "get_author",
+    "description": "Fetch an author's profile from Open Library by their author key (e.g., 'OL23919A'). Returns name, birth_date, death_date, biographical summary, and Wikipedia URL.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "author_key": {
+          "type": "string",
+          "description": "Open Library author key (e.g., OL23919A)"
+        }
+      },
+      "required": [
+        "author_key"
+      ]
+    }
+  },
+  {
+    "name": "get_book_work",
+    "description": "Fetch the canonical Open Library \"work\" record (the concept of a book across all its editions), by work ID (e.g. \"OL45804W\"). Returns title, description, first publish date, subjects, and author keys. Use search_books to find a work_id (the W-suffixed key); use get_book for a specific edition by ISBN. (Named get_book_work to avoid colliding with Crossref get_work.)",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "work_id": {
+          "type": "string",
+          "description": "Open Library work ID, the W-suffixed identifier (e.g. \"OL45804W\")."
+        }
+      },
+      "required": [
+        "work_id"
+      ]
+    }
+  }
+]
