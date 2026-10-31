@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-books",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Books MCP — wraps Open Library API (free, no auth)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "books",
     "gatewaySlug": "books",
-    "sourceHash": "v1-d3af9176976a9479552f0e71bad49152c40a57f54264d5199d41c07f97219d5b",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-ea947f86131fe41025e3f232e759b0d90bd98fc5edaa2edcaae5183429c1cc95",
+    "sourceCommit": "547a3983b42dacf4389ca474860b0a1dee8e6053"
   }
 }
